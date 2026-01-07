@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandit Ji - Pooja Catalog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .filters {
+            padding: 20px 30px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        input[type="text"], select {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        input[type="text"]:focus, select:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+        }
+
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #764ba2;
+        }
+
+        .catalog {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .pooja-card {
+            background: #f9f9f9;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .pooja-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .pooja-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .pooja-intents {
+            font-size: 12px;
+            background: #e8e8ff;
+            color: #667eea;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .pooja-description {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .pooja-info {
+            font-size: 12px;
+            color: #888;
+            margin: 8px 0;
+        }
+
+        .pooja-benefits {
+            font-size: 12px;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .pooja-benefits strong {
+            color: #333;
+        }
+
+        .pooja-tags {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .tag {
+            background: #fff3cd;
+            color: #856404;
+            font-size: 11px;
+            padding: 3px 8px;
+            border-radius: 3px;
+        }
+
+        .stats {
+            padding: 20px 30px;
+            background: #f5f5f5;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .no-results {
+            padding: 40px;
+            text-align: center;
+            color: #999;
+            font-size: 16px;
+        }
+
+        @media (max-width: 600px) {
+            .catalog {
+                grid-template-columns: 1fr;
+            }
+            .header h1 {
+                font-size: 24px;
+            }
+            .filters {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            input, select, button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🙏 Pandit Ji Pooja Catalog</h1>
+            <p>Browse all 28+ poojas for different spiritual needs</p>
+        </div>
+
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="Search pooja by name..." onkeyup="filterPoojas()">
+            <select id="intentFilter" onchange="filterPoojas()">
+                <option value="">All Intents</option>
+                <option value="health">Health</option>
+                <option value="wealth">Wealth</option>
+                <option value="marriage">Marriage</option>
+                <option value="career">Career</option>
+                <option value="family">Family</option>
+                <option value="protection">Protection</option>
+                <option value="prosperity">Prosperity</option>
+                <option value="education">Education</option>
+            </select>
+            <button onclick="resetFilters()">Reset</button>
+        </div>
+
+        <div class="catalog" id="catalog"></div>
+        <div class="stats" id="stats"></div>
+    </div>
+
+    <script>
+        const API_URL = "http://localhost:8000";
+        let allPoojas = [];
+
+        // Load poojas on page start
+        window.addEventListener("load", async () => {
+            try {
+                const response = await fetch(`${API_URL}/poojas`);
+                const data = await response.json();
+                allPoojas = data.poojas || [];
+                displayPoojas(allPoojas);
+            } catch (error) {
+                console.error("Error loading poojas:", error);
+                document.getElementById("catalog").innerHTML = 
+                    '<div class="no-results">Failed to load poojas. Make sure backend is running on http://localhost:8000</div>';
+            }
+        });
+
+        function displayPoojas(poojas) {
+            const catalog = document.getElementById("catalog");
+            const stats = document.getElementById("stats");
+
+            if (poojas.length === 0) {
+                catalog.innerHTML = '<div class="no-results">No poojas found. Try different filters.</div>';
+                stats.innerHTML = `Total: 0 poojas`;
+                return;
+            }
+
+            catalog.innerHTML = poojas.map(pooja => `
+                <div class="pooja-card" onclick="window.location.href='#pooja-${pooja.id}'">
+                    <div class="pooja-name">${pooja.name}</div>
+                    <div class="pooja-intents">${pooja.intents.join(", ")}</div>
+                    <div class="pooja-info">⏱️ ${pooja.duration_minutes} min</div>
+                    <div class="pooja-info">💰 ₹${pooja.price_inr}</div>
+                    <div class="pooja-info">📍 ${pooja.cities.slice(0, 2).join(", ")}</div>
+                    <div class="pooja-tags">
+                        ${pooja.tags.slice(0, 3).map(tag => `<span class="tag">${tag}</span>`).join("")}
+                    </div>
+                </div>
+            `).join("");
+
+            stats.innerHTML = `Total: ${poojas.length} pooja(s) found`;
+        }
+
+        function filterPoojas() {
+            const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+            const intentFilter = document.getElementById("intentFilter").value.toLowerCase();
+
+            const filtered = allPoojas.filter(pooja => {
+                const nameMatch = pooja.name.toLowerCase().includes(searchTerm);
+                const intentMatch = !intentFilter || pooja.intents.some(i => i.toLowerCase().includes(intentFilter));
+                return nameMatch && intentMatch;
+            });
+
+            displayPoojas(filtered);
+        }
+
+        function resetFilters() {
+            document.getElementById("searchInput").value = "";
+            document.getElementById("intentFilter").value = "";
+            displayPoojas(allPoojas);
+        }
+    </script>
+</body>
+</html>

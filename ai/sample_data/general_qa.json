@@ -1,0 +1,118 @@
+{
+  "general_qa": [
+    {
+      "id": "what_is_pooja",
+      "keywords": ["pooja", "ritual", "ceremony", "prayer", "worship"],
+      "question": "What is a Pooja?",
+      "answer": "A Pooja is a Hindu ritual or ceremony performed to invoke blessings from a deity. It typically involves offerings, mantras, prayers, and sacred actions. Poojas can be performed for various purposes: health, prosperity, peace, protection, education, marriage, and many others. Each pooja has specific steps, materials, and intended benefits rooted in Hindu scriptures and traditions."
+    },
+    {
+      "id": "when_to_perform",
+      "keywords": ["when", "time", "date", "auspicious", "best time"],
+      "question": "When should I perform a Pooja?",
+      "answer": "The best time for poojas depends on the type and your intention. Generally: Early morning (Brahma Muhurt) is considered most auspicious. Full moon (Purnima) and new moon (Amavasya) are powerful times. Specific festivals aligned with the deity (e.g., Maha Shivaratri for Shiva). Some poojas require specific lunar phases. Consult a local priest for precise timing based on your calendar and location."
+    },
+    {
+      "id": "what_are_mantras",
+      "keywords": ["mantra", "chanting", "chant", "hymn", "verse"],
+      "question": "What are Mantras?",
+      "answer": "Mantras are sacred Sanskrit phrases or sounds with spiritual power. When chanted with devotion and understanding, they are believed to: Attune your mind to divine frequencies. Invoke blessings and protection. Heal emotional and physical ailments. Create positive vibrations. Common mantras include: Om (universal sound), Gayatri Mantra (for wisdom), Maha Mrityunjaya Mantra (for healing). Mantra chanting is called 'Japa' and is an essential part of many spiritual practices."
+    },
+    {
+      "id": "what_is_havan",
+      "keywords": ["havan", "homa", "fire", "offering", "sacred fire"],
+      "question": "What is a Havan or Homa?",
+      "answer": "A Havan (or Homa) is a sacred fire ritual where offerings like ghee, grains, herbs, and flowers are made into the fire while chanting mantras. Benefits include: Purifies the environment and removes negative energy. Invokes blessings from deities. Healing and peace. Balance of doshas (in Ayurveda). The fire represents the transformation of material offerings into divine energy. It's often performed at the end of major poojas."
+    },
+    {
+      "id": "what_is_aarti",
+      "keywords": ["aarti", "arati", "lamp", "light"],
+      "question": "What is Aarti?",
+      "answer": "Aarti is a ritual of worship where a lamp (usually with ghee or oil) is waved in front of a deity in circular motions. It signifies: The offering of light (knowledge) to the divine. Removal of darkness (ignorance). The final blessing from the deity to the devotee. It's typically performed at the end of poojas while devotional songs are sung. The flame represents the divine light and purifying power."
+    },
+    {
+      "id": "what_is_prasad",
+      "keywords": ["prasad", "prasada", "blessed food", "offering", "distribute"],
+      "question": "What is Prasad?",
+      "answer": "Prasad is blessed food or offering that has been presented to a deity during a pooja and then distributed to devotees. It's believed to carry the blessings of the deity. Types include: Sweets (laddu, kheer), Fruits, Flowers, Coconut. Eating prasad is an important part of worship as it: Completes the cycle of devotion. Carries divine blessings. Creates a connection between devotee and deity. Prasad should be consumed with respect and gratitude."
+    },
+    {
+      "id": "what_are_doshas",
+      "keywords": ["dosha", "graha dosha", "planetary", "imbalance", "affliction"],
+      "question": "What are Doshas?",
+      "answer": "Doshas (in Ayurveda) are imbalances in the body's natural energies (Vata, Pitta, Kapha). Graha Doshas are planetary afflictions that may cause challenges. Common doshas include: Mangal Dosha (Mars) - affects relationships. Shani Dosha (Saturn) - brings hardships. Rahu/Ketu doshas - cause confusion and instability. Remedies: Specific poojas like Navagraha Shanti, Hanuman Chalisa, or mantras can help mitigate doshas. A qualified astrologer should diagnose your specific dosha."
+    },
+    {
+      "id": "how_to_prepare",
+      "keywords": ["prepare", "preparation", "before", "beforehand", "ready"],
+      "question": "How should I prepare for a Pooja?",
+      "answer": "Preparation is important for a meaningful pooja: Physical: Take a bath, wear clean clothes, avoid non-vegetarian food. Mental: Focus your intention clearly. Know why you're performing the pooja. Meditation for 5-10 minutes helps. Materials: Gather all required items (flowers, ghee, fruits, etc.). Cleanliness: Purify the space where you'll perform the pooja. Timing: Choose an auspicious time if possible. Guidance: If new, consult a priest or experienced person. Purity of heart and sincere devotion matter most."
+    },
+    {
+      "id": "what_is_tantra",
+      "keywords": ["tantra", "tantric", "esoteric", "advanced practice"],
+      "question": "What is Tantra?",
+      "answer": "Tantra is an esoteric spiritual practice that works with divine energy and consciousness. Key concepts: Uses mantras, yantras (sacred diagrams), and rituals to invoke specific deities and energies. Focuses on transformation and awakening of inner power (Kundalini). Requires a qualified guru (teacher) for safe practice. Common misconceptions: Tantra is often misunderstood; authentic tantric practices are deeply spiritual and respectful. Always learn from legitimate sources and experienced teachers."
+    },
+    {
+      "id": "what_is_yantra",
+      "keywords": ["yantra", "diagram", "sacred geometry", "symbol"],
+      "question": "What is a Yantra?",
+      "answer": "A Yantra is a sacred geometric diagram representing a deity or cosmic principle. Yantras: Embody specific energies and intentions (e.g., Sri Yantra for Lakshmi). Serve as focal points for meditation. Can be drawn, engraved, or written. Common yantras: Sri Yantra (prosperity), Kali Yantra (power), Shiva Yantra (meditation). Using a yantra: Place in your worship space, meditate on it, or wear as a pendant. They amplify the power of mantras and rituals when used with devotion and understanding."
+    },
+    {
+      "id": "what_is_karma",
+      "keywords": ["karma", "action", "consequence", "law of karma", "cause and effect"],
+      "question": "What is Karma?",
+      "answer": "Karma is the law of cause and effect in the spiritual realm. Principles: Every action (thought, word, deed) has consequences. Good actions (dharma) create positive karma; negative actions create obstacles. Karma from past lives (Prarabdha) shapes your current life. Breaking negative karma: Conscious actions aligned with dharma (duty). Devotion and spiritual practices. Meditation and self-awareness. Poojas can help mitigate negative karma and strengthen positive intentions. Ultimately, sincere repentance and changed behavior are most powerful."
+    },
+    {
+      "id": "what_is_dharma",
+      "keywords": ["dharma", "duty", "righteous", "moral", "ethical"],
+      "question": "What is Dharma?",
+      "answer": "Dharma is righteous duty or moral law in Hindu philosophy. It means: Living ethically and truthfully. Fulfilling your responsibilities (family, work, community). Acting in harmony with cosmic order. Dharma varies by: Age (student, householder, retiree, renunciate). Caste/profession (originally, now understood as occupation). Gender. Life stage. Following Dharma leads to: Peace and prosperity. Spiritual growth. Good karma. Fulfilling your life's purpose. Neglecting Dharma creates suffering and imbalance."
+    },
+    {
+      "id": "what_is_yoga",
+      "keywords": ["yoga", "exercise", "practice", "asana", "meditation"],
+      "question": "What is Yoga?",
+      "answer": "Yoga is a holistic spiritual and physical practice that unites mind, body, and spirit. Types: Hatha Yoga - physical postures and breathing. Raja Yoga - meditation and mental discipline. Bhakti Yoga - devotion. Karma Yoga - selfless action. Jnana Yoga - knowledge. Benefits: Physical health (strength, flexibility). Mental clarity and peace. Stress reduction. Spiritual awakening. Connection to higher consciousness. Yoga complements pooja practices and enhances spiritual growth."
+    },
+    {
+      "id": "what_is_meditation",
+      "keywords": ["meditation", "dhyana", "focus", "mind", "contemplation"],
+      "question": "What is Meditation?",
+      "answer": "Meditation is a practice of focusing the mind to achieve mental clarity and spiritual insight. How to meditate: Find a quiet, clean space. Sit in a comfortable upright position. Close your eyes and focus on your breath. Let thoughts pass without judgment. Gradually increase duration (start with 5-10 minutes). Benefits: Reduced stress and anxiety. Improved focus and memory. Emotional balance. Connection to inner peace. Enhanced spiritual awareness. A few minutes daily is more beneficial than occasional long sessions."
+    },
+    {
+      "id": "what_is_bhakti",
+      "keywords": ["bhakti", "devotion", "love", "faith", "surrender"],
+      "question": "What is Bhakti?",
+      "answer": "Bhakti is the path of devotion and love for the divine. Core principles: Sincere love and surrender to a deity or Brahman (universal consciousness). Emotional connection beyond rituals. Singing devotional songs (Bhajans, Kirtans). Regular prayer and remembrance (Smaran). Bhakti yoga is one of the most accessible paths to spiritual awakening. It teaches: Unconditional love and service. Humility and acceptance. Trust in divine will. Many traditions emphasize Bhakti as the easiest path for householders."
+    },
+    {
+      "id": "can_women_do_poojas",
+      "keywords": ["women", "female", "menstruation", "period", "pregnant"],
+      "question": "Can women perform Poojas?",
+      "answer": "Yes, women can absolutely perform poojas. Practices vary by tradition and family: Generally, poojas can be done by women anytime, as devotion transcends physical conditions. Some traditional practices restrict rituals during menstruation, but many modern gurus and spiritual leaders say sincere devotion is what matters. Pregnant women can perform poojas with modified movements. Always consult your family tradition or a trusted spiritual guide. Key point: A sincere heart and pure intention are what make a pooja powerful, regardless of gender."
+    },
+    {
+      "id": "cost_of_pooja",
+      "keywords": ["cost", "price", "expensive", "afford", "free"],
+      "question": "What is the cost of a Pooja?",
+      "answer": "Pooja costs vary widely based on: Complexity (simple rituals vs. elaborate ceremonies). Duration (30 minutes to several hours). Priest expertise and experience. Location (urban areas typically cost more). Required materials (flowers, ghee, offerings). Range: ₹500-₹2,000 for simple home poojas. ₹2,000-₹10,000 for medium ceremonies. ₹10,000+ for elaborate yajnas. Budget options: Perform simple poojas at home with family. Consult local temples for affordable priest services. Many temples offer poojas on donation basis. Remember: The value of a pooja isn't determined by cost, but by sincerity and devotion."
+    },
+    {
+      "id": "home_vs_temple",
+      "keywords": ["home", "temple", "house", "perform at home"],
+      "question": "Can I perform a Pooja at home?",
+      "answer": "Yes, you can perform poojas at home. Advantages: More personal and intimate. Convenient timing and schedule. Lower cost. More privacy. Requirements: Clean, dedicated space. A small altar or pooja room. Basic materials (lamp, flowers, water, incense). Knowledge of the ritual (or guidance from a priest). Tips: Face east or north while performing. Keep the space sacred and undisturbed. Perform with family for collective blessings. Consult a priest if it's your first time for detailed guidance. Many simple poojas (like Ganesh Puja, Lakshmi Puja) are ideal for home performance."
+    },
+    {
+      "id": "poojas_for_beginners",
+      "keywords": ["beginner", "new", "first time", "easy", "simple"],
+      "question": "Which poojas are best for beginners?",
+      "answer": "Great poojas to start with: Ganesh Puja - Simple, auspicious, removes obstacles. Duration: 30-45 minutes. Lakshmi Puja - For prosperity, family-friendly. Duration: 45-60 minutes. Hanuman Chalisa - Devotional chanting, minimal materials. Duration: 20-30 minutes. Satyanarayan Katha - Family ritual with story. Duration: 60-90 minutes. Maha Mrityunjaya Japa - Healing mantra meditation. Duration: 30-45 minutes. Tips: Start with simple rituals and increase complexity as you gain experience. Attend a pooja at a temple to understand the flow. Use online guides or consult a priest. Most importantly: Perform with sincere devotion and clear intention."
+    }
+  ]
+}
